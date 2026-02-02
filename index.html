@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Leaderboard</title>
+    <link rel="stylesheet" href="mystyle.css"> 
+</head>
+<body>
+    <h1>Game Leaderboard</h1>
+    <table id="leaderboard">
+        <tr>
+            <th>Player</th>
+            <th>Score</th>
+        </tr>
+
+        <h2>Add new Player</h2>
+        <input type="text" id="newName" placeholder="Player Name">
+        <input type="number" id="newScore" placeholder="Player Score">
+        <button onclick="addPlayer()">Add Player</button>
+
+        <h2>Filter by Minimum Score</h2>
+        <input type="number" id="minScore" placeholder="Minimum Score">
+        <button onclick="filterLeaderBoard()"?>Filter</button>    
+    </table>
+    <script src="script.js"></script>
+    
+</body>
+</html>
